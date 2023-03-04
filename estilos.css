@@ -10,4 +10,52 @@
     width: 100vw;
     background-color: dodgerblue;
     font-size: 2rem;
-    }
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+    top: 20px; left: 10px;
+    font-size: 2rem;
+    color: green;
+}
+
+.pos-relative img {
+    width: 100%;
+}
+
+.capitais {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: lightblue;
+    padding: 50px    
+}
+
+.capitais div {
+    display: flex;
+    justify-content: space-around;
+    /* display: inline-block; */
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888;
+    margin: 10px;
+}
+
+.capitais div img {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+.capitais div div:last-child {
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

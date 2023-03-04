@@ -1,4 +1,4 @@
-* {font-family: 'Noto Sans JP', sans-serif;} 
+* {font-family: 'Noto Sans JP', sans-serif;}
 
 * {box-sizing: border-box; padding: 0; margin: 0;}
 
@@ -20,7 +20,7 @@
     position: absolute;
     top: 20px; left: 10px;
     font-size: 2rem;
-    color: green;
+    color: pink;
 }
 
 .pos-relative img {
@@ -33,7 +33,7 @@
     justify-content: space-around;
     align-items: space-around;
     background-color: lightblue;
-    padding: 50px    
+    padding: 50px
 }
 
 .capitais div {
@@ -42,12 +42,17 @@
     /* display: inline-block; */
     border-radius: 20px;
     box-shadow: 5px 5px 15px #888;
-    margin: 10px;
+    margin: 10px 0 10px 0;
 }
 
 .capitais div img {
     border-radius: 20px 0 0 20px;
-    height: 100%;
+    /* height: 100%; */
+    margin-left: 10px;
+}
+
+.capitais div div:nth-child(2) {
+    margin-right: 10px;
 }
 
 .capitais div div:last-child {
@@ -58,4 +63,73 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper img {
+    clip: rect(0px,60px,200px,0px);
+    border-radius: 20px 20px 20px 20px;
+    width: 300px;
+    height: 200px;
+}
+
+.wrapper div p {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    color: white;
+}
+
+.wrapper div:hover {
+    display: none;
+}
+
+.foot {
+    position: absolute;
+    z-index: 0;
+    top: 50px;
+    left: 20px;
+}
+
+.car {
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    left: 120px;
+}
+
+.train {
+    border-radius: ;
+    position: absolute;
+    z-index: 2;
+    top: 220px;
+    left: 220px;
+}
+
+.plane {
+    position: absolute;
+    z-index: 3;
+    top: 320px;
+    left: 320px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    color: black;
+}
+
+header a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover {
+    font-weight: bold;
+    color: blue;
 }
